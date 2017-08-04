@@ -2,6 +2,7 @@ let gulp = require('gulp');
 
 /*
 gulp.watch用来监控文件变化。如果变化了就会执行指定的任务，或者是fn。
+
 */
 
 gulp.task('demo',function(){
