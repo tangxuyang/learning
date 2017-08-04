@@ -1,0 +1,21 @@
+{
+  "name": "gulp-core",
+  "version": "1.0.0",
+  "description": "学习gulp我要达到目标：\r - 什么是gulp\r - 熟练使用gulp\r - 熟练使用gulp的一些插件，包括但不限于：\r   - gulp\r   - gulp-if\r   - gulp-uglify\r   - gulp-concat\r   - gulp-live-server\r   - gulp-util\r   - gulp-livereload\r   - gulp-sequence\r   - gulp-sequence\r - 能够使用gulp创建一个复杂的前端构建流程",
+  "main": "task.js",
+  "scripts": {
+    "task": "gulp --gulpfile task.js output",
+    "depTask": "gulp --gulpfile task.js output2",
+    "asyncTask": "gulp --gulpfile task.js asyncTask",
+    "promiseTask":"gulp -gulpfile task.js promiseTask",
+    "watch":"gulp --gulpfile watch.js watch",
+    "fnWatch":"gulp --gulpfile watch.js fnWatch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bluebird": "^3.5.0",
+    "gulp": "^3.9.1"
+  }
+}

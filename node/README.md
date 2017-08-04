@@ -1,0 +1,11 @@
+这个目录里面会学习以下的package：
+- vynyl-named
+- raw-body
+- heredoc
+- localtunnerl
+- bluebird
+- request
+- express
+- koa
+- connect-livereload
+- webpack 请参见webpack目录

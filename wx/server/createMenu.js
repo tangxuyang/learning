@@ -1,0 +1,38 @@
+let request = require('request');
+let config = require('./config');
+request({
+  url:"https://api.weixin.qq.com/cgi-bin/menu/create?access_token=RxJBOg-qSgtVcpIC2zMz1Sv0k0V9YxXB6RtL9btlFMhuGL-JXoK3v1sPadHtc9dZIxT6biFbEslBx4l1pDB9zmjwBjCA6yQKoqAfJUKZygfrqEef0ZRDf9fYVT_uLd0-RXRiAFAFLF",
+  method:"POST",
+  json:true,
+  body:{
+    "button":[
+     {
+          "type":"click",
+          "name":"今日歌曲",
+          "key":"V1001_TODAY_MUSIC"
+      },
+      {
+           "name":"菜单",
+           "sub_button":[
+           {
+               "type":"view",
+               "name":"搜索",
+               "url":"http://www.soso.com/"
+            },
+            {
+                 "type":"miniprogram",
+                 "name":"wxa",
+                 "url":"http://mp.weixin.qq.com",
+                 "appid":"wx286b93c14bbf93aa",
+                 "pagepath":"pages/lunar/index"
+             },
+            {
+               "type":"click",
+               "name":"赞一下我们",
+               "key":"V1001_GOOD"
+            }]
+       }]
+  }
+},function(error,res,body){
+  console.log(res);
+});

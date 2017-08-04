@@ -1,0 +1,11 @@
+这个目录学习的gulp相关的package：
+- gulp
+- gulp-if
+- gulp-livereload
+- gulp-plumber
+- gulp-sequence
+- gulp-concat
+- gulp-util
+- gulp-uglify
+- gulp-rename
+- gulp-live-server
