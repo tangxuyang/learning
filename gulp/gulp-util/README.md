@@ -1,0 +1,11 @@
+提供了一些gulp常用工具！！  
+- log
+- colors
+- replaceExtension
+- isStream
+- isBuffer
+- template
+- new File
+- noop
+- buffer
+- new PluginError

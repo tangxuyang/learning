@@ -1,0 +1,15 @@
+{
+  "name": "here-doc",
+  "version": "1.0.0",
+  "description": "可以从函数内部的注释获取大段文本，对于需要拼接字符串的需求来说这是一个不错的解决方案。  \r ```\r var heredoc = require('heredoc');\r var str = heredoc(function(){/*\r   within this comment block,\r   any text\r   will\r     be\r       treated\r         as\r     pre-formatted\r       multiline text\r   (kinda like html <pre>)\r   */})\r ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "heredoc": "^1.3.1"
+  }
+}

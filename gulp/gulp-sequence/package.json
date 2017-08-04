@@ -1,0 +1,15 @@
+{
+  "name": "gulpsequence",
+  "version": "1.0.0",
+  "description": "顺序执行任务",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sequence": "^0.4.6"
+  }
+}

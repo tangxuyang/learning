@@ -1,0 +1,15 @@
+{
+  "name": "gulpconcat",
+  "version": "1.0.0",
+  "description": "合并多个js文件到一个文件中。",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1"
+  }
+}
