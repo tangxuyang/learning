@@ -1,0 +1,16 @@
+{
+  "name": "gulpignore",
+  "version": "1.0.0",
+  "description": "从流中删除一些内容。",
+  "main": "index.js",
+  "scripts": {
+    "exclude":"gulp exclude",
+    "include":"gulp include"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-ignore": "^2.0.2"
+  }
+}

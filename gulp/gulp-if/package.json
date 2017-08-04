@@ -1,0 +1,18 @@
+{
+  "name": "gulpif",
+  "version": "1.0.0",
+  "description": "我多次在gulp相关的文档中读到vinyl，真不知道是什么意思？",
+  "main": "gulpfile.js",
+  "scripts": {
+
+    "true":"gulp",
+    "false":"gulp false"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-if": "^2.0.2",
+    "gulp-uglify": "^3.0.0"
+  }
+}
