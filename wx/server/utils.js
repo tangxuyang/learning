@@ -1,13 +1,13 @@
 /*
 
 */
-let xml2js = require('xml2js');
-let Promise = require('bluebird');
+let xml2js = require('xml2js');//把xml字符串转换成js对象
+let Promise = require('bluebird');//提供Promise支持
 
 exports.parseXmlAsync = function(xml){
   return new Promise(function(resolve,reject){
     xml2js.parseString(xml,{trim:true},function(err,content){
-      if(err){
+      if(err){//转换发生了错误
         reject(err);
       }
       else{

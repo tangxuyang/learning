@@ -1,3 +1,7 @@
+/*
+  配置文件，存放微信相关的内容
+  APPID、APPSecret和token都是从微信后台获取的！！
+*/
 module.exports = {
   wechat:{
     appID:"wx1a1efbfc96c17073",

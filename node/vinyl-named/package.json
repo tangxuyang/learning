@@ -1,0 +1,15 @@
+{
+  "name": "vinylnamed",
+  "version": "1.0.0",
+  "description": "我还不知道这个是干啥的！！",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "vinyl-named": "^1.1.0"
+  }
+}

@@ -14,7 +14,7 @@ let url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&
 function updateAccessToken(force){
   return new Promise(function(resolve,reject){
     let now = (new Date()).getTime();
-    //强刷，没有access_token或过期都要重新获取access_token    
+    //强刷，没有access_token或过期都要重新获取access_token
     if(force || !access_token || expires_time < now){
       request({url:url,json:true},function(error,res,body){
         if(res.statusCode == 200){
@@ -30,8 +30,6 @@ function updateAccessToken(force){
     }
   });
 }
-
-exports.updateAccessToken = updateAccessToken;
 
 module.exports = function(req,res,next){
   updateAccessToken().then(function(token){

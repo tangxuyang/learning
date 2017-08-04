@@ -9,9 +9,9 @@ let token = require('./middlewares/token');
 
 app.use(verify);
 app.use(token);
-//token.updateAccessToken();
 
 app.get('/',function(req,res,next){
+  //配置域名是验证用的
   let echostr = req.query.echostr;
   res.end(echostr);
 });

@@ -19,6 +19,7 @@ gulp.task('scripts',() => {
       }
     }))
     .pipe(named())
+      /*我一直搞不清楚为什么要用named，直到看到了webpack-stream的源代码才知道。named会给file添加一个named的属性，值就是文件的名字。webpack-stream就用这个值作为入口点的key*/
     .pipe(gulpWebpack({
       module:{
         loaders:[{

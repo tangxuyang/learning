@@ -1,3 +1,8 @@
+/*
+创建自定义菜单
+可惜我的订阅号是个人的，不能微信认证，因此这个借口是没权限调用的。。。
+*/
+
 let request = require('request');
 let config = require('./config');
 request({
