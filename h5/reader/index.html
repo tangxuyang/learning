@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detect" content="telephone=no">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+      html{
+        width:100%;
+        height: 100%;
+        overflow-x: hidden;
+
+      }
+      body{
+        text-align: left;
+        width:100%;
+        /*overflow:hidden;*/
+        background: #e9dfc7;
+        padding-bottom:70px;
+      }
+      .m-read-content{
+        font-size:14px;
+        color:#555;
+        line-height:31px;
+        padding:15px;
+      }
+      .m-read-content h4{
+        font-size:20px;
+        color:#736357;
+        border-bottom:1px solid #736357;
+        letter-spacing: 2px;
+        margin:0 0 1em 0;
+      }
+      .m-read-content p{
+        text-indent:2em;/*中文一般都是一段开头空两个空格*/
+        margin:0.5em 0;
+        letter-spacing:0px;
+        line-height:1.71;
+      }
+      .u-tab{
+        height:34px;
+        margin:10px auto;
+        line-height:34px;
+        border-radius:8px;
+        border-right: 1px solid #858382;
+        font-size:12px;
+        background:#000;
+        opacity:.9;
+      }
+
+      .u-tab li{
+        display:inline-block;
+        width:49%;
+        /*border-right: 1px solid #858382;*/
+        text-align: center;
+        color:#fff;
+      }
+      .u-tab li + li{/*给除了第一个li外的所有li添加border-left*/
+        border-left: 1px solid #858382;
+      }
+      .m-button-bar{
+        width:70%;
+        max-width:800px;
+        margin:0 auto;
+        padding:5px;
+      }
+
+      .top-nav{
+        position:fixed;
+        /*left:0;*/
+        top:0;
+        height:50px;
+        width:100%;
+        z-index:9999;
+        background:#000;
+        color:#fff;
+      }
+      .nav-title{
+        position:absolute;
+        top:16px;
+        left:14px;
+        color:#d5d5d6
+      }
+      .top-nav .nav-title::before{
+        margin-right: 4px!important;
+        content: "<";
+        display: inline-block;
+        /*font-family: FontAwesome;*/
+        /*text-decoration: none;*/
+        color: #fff;
+        /*font-size: 70%;*/
+      }
+      .bottom-nav{
+        position:fixed;
+        bottom:0;
+        width:100%;
+        z-index:9999;
+        height:70px;
+        background:#000;
+        color:#fff;
+        border-top:1px solid #fff;
+      }
+      .tool-panel{
+        /*display:none;*/
+        position:fixed;
+        bottom:70px;
+        width:100%;
+        z-index:10000;
+        height:135px;
+        background:#000;
+        opacity:.9;
+        color:#fff;
+      }
+      .tool-panel dl{
+        padding:5px 10px;
+        margin:15px;
+      }
+      .tool-panel dl dt{
+        display:inline-block;
+        padding-left:10px;
+        padding-right:20px;
+      }
+      .tool-panel dl dd{
+        display:inline-block;
+      }
+      .font-size-button{
+        background:none;
+        border:1px solid #8c8c8c;
+        color: #fff;
+        border-radius:16px;
+        padding:5px 40px;
+        outline:none;
+      }
+      .font-size-button + .font-size-button{
+        margin-left:10px;
+      }
+      .bg-container{
+        width:30px;
+        height:30px;
+        border-radius:50%;
+        background:#fff;
+        display:inline-block;
+        border:none;
+        /*position:relative;
+        top:10px;*/
+        outline:none;
+        color:#fff;
+      }
+
+      .bottom-nav ul{
+        font-size:0px;
+        margin-top:20px;
+      }
+
+      .bottom-nav li{
+        display:inline-block;
+        width:33.33%;
+        /*border:1px solid red;*/
+        text-align: center;
+        margin:0;
+        font-size:20px;
+        line-height: 20px;
+      }
+      .hidden{
+        display:none;
+      }
+      .overlay{
+        position:fixed;
+        z-index:10001;
+        width:100%;
+        height:40%;
+        top:30%;
+      }
+    </style>
+  </head>
+  <body>
+    <div  id="container">
+      <div id="top-nav" class="top-nav hidden">
+        <!-- <div class="icon-back"></div> -->
+        <div class="nav-title">返回书架</div>
+      </div>
+      <div id="fiction_chapter_title"></div>
+      <div id="fiction_container" class="m-read-content">
+        <h4>昨夜种种不是梦</h4>
+        <p>
+          There is a story!!
+        </p>
+        <p>4月5日，星期六，一个美丽的早晨。(请搜索，或者直接输入看最新章节)风和日丽鸟儿鸣叫，今天，不开工不上课，多么美好的日子。</p>
+
+        <p>杨奇从深沉的睡眠中醒来，缓缓坐直了身躯。他看了看窗外的春日景色，脸上是恍如隔世的诡异表情。忽然，杨奇似乎想起了什么，摸了摸身上——端端正正的穿着一套功夫装。</p>
+
+        <p>刚睡醒的人为什么会穿着功夫装？看那款式还相当有年头。</p>
+
+        <p>杨奇豁然起身，快步抢到厕所的镜子前，把上身的衣服一撩——两块胸大肌、八块腹肌，加上其他各种叫不出名字的肌肉整整齐齐的出现在该出现的位置，让一米八露头的杨奇显得挺拔而匀称。</p>
+
+        <p>真练得一副好身材！中年妇女见了一定转不开眼！</p>
+
+        <p>“不对不对不对，一定是我眼花了。我就是一个死宅男死上班族，早八晚六辛辛苦苦，怎么可能有什么八块肌人鱼线？一定是眼花了……”杨奇不停摇摇，拒绝相信自己五百度的近视眼。</p>
+
+        <p>对了，近视眼！</p>
+
+        <p>回到床头拿起眼镜戴上，熟悉的触感让鼻梁甚至有一种安全感，仿佛没有这个东西就活不下去。常年近视的人啊，真是伤不起。</p>
+
+        <p>“这次应该没错了，再看一遍吧，不可能啊，那应该只是个梦……”杨奇豁然睁眼，就见脚下一阵踉跄差点摔倒。</p>
+
+        <p>哎呀妈——晕！</p>
+
+        <p>杨奇赶紧把眼镜摘下来，于是世界又恢复了正常。</p>
+
+        <p>“不对不对不对，这绝对有诡啊！绝对有诡！”从十二岁上初中开始，眼镜已经陪了杨奇十三年了。十三年来，逐年递增的度数已经突破五百。可以说眼镜已经是他整个人的一部分，没有眼镜的杨奇就不是个完全体的杨奇，但现在竟然一觉醒来现自己不近视了！</p>
+
+        <p>“咋、咋回事啊，不就是做了个神奇的梦吗，怎么跟蜘蛛侠第一部的开场似的……”杨奇哈哈干笑了两声，忽然面容一肃不再傻笑。</p>
+
+        <p>他决定去做一个实验，证明自己到底遇到了什么事。</p>
+
+        <p>开门，出门，杨奇来到了走廊上。杨奇住的地方不高档不低端，算是个中庸的居民区。二十三层高的楼，杨奇住在十四层。这种层高的地方，除了故意健身的人以外，没有人会走楼梯。所以杨奇站在楼梯间中，上上下下全无人影。</p>
+
+        <p>他面色肃穆的看着向下的楼梯扶手，扶手高到人腰，亮滑亮滑的。放在初中校园里，绝对会有人一屁股坐上去顺着斜坡往下滑。</p>
+
+        <p>杨奇没滑过扶手，一方面是他性格不那么好动，另一方面是他觉得以自己的平衡能力和运动细胞，应该搞不定这种高精尖的运动方式。</p>
+
+        <p>但是现在，今天，从梦中醒来的杨奇面容整肃的看着楼梯扶手，如同跳水运动员看着跳台。</p>
+
+        <p>只见杨奇深深地吸了一口气，随着吸气，他全身都按照某种规律活动起来。抖肩甩腕脚步画圆。随着缓缓地吐气声，杨奇竟然将全身上下都活动了个遍，整个人如同押进枪膛的子弹，精气神都提了起来。</p>
+
+        <p>“喝！”杨奇低喝一声，真个人弹腿跃起，平地起跳的情况下竟然轻松的站到了楼梯扶手上。脚上穿着简单古朴的布鞋，鞋底与扶手摩擦，刺溜一声杨奇就顺着扶手滑了下去。</p>
+
+        <p>小小晃荡了两下，杨奇便以黄飞鸿的姿态稳稳的站在扶手上。虽然整个人在下滑，但看上去却像在坐电梯一样安稳。</p>
+
+        <p>一截扶手转眼到头，杨奇轻巧的跃下。</p>
+
+        <p>“真的……不一样了……”杨奇似乎明悟了什么事，回头再看长长的阶梯，双眼中似乎燃烧起灼热的光芒。</p>
+
+        <p>深吸一口气，杨奇迈步加，啪的在左侧墙壁上踢踏借力，豁然腾空。整个人一个侧空翻，落向阶梯对侧。伸手在扶手上一抓，如同猿猴一般灵巧的一荡便下了一整层。杨奇似乎兴奋起来，一路脚不沾地，就在墙壁和扶手间来回腾挪纵跃，顺着楼梯飞向下。</p>
+
+        <p>转眼之间，已经到达了最下层。杨奇一个前空翻脱离扶手，啪的一下双脚落地稳稳站定——就这落地的一手，放在运动会上绝对得个高分！奥运会级别谈不上，全运会里绝对能占个前列。</p>
+
+        <p>收拢了一下微微散乱的气息，杨奇抬眼迈步走出楼梯。外面是小区草坪，对面是城市公园。春日的阳光照在脸上，杨奇兴奋的情难自禁。他握紧双拳，一声长笑：“真的——不一样了！！哈哈哈哈！”</p>
+
+      </div>
+      <div class="m-button-bar">
+        <ul class="u-tab">
+          <li id="prev_button">上一章</li>
+          <li id="next_button">下一章</li>
+        </ul>
+      </div>
+
+      <div id="tool-panel" class="tool-panel hidden">
+        <dl>
+          <dt>字号</dt>
+          <dd>
+            <button class="font-size-button">大</button>
+            <button class="font-size-button">小</button>
+          </dd>
+        </dl>
+        <dl>
+          <dt>背景</dt>
+          <dd>
+            <button class="bg-container" style="background-color:red;color:red">_</button>
+            <button class="bg-container" style="background-color:maroon;color:maroon">_</button>
+            <button class="bg-container" style="background-color:purple;color:purple">_</button>
+            <button class="bg-container" style="background-color:yellow;color:yellow">_</button>
+          </dd>
+        </dl>
+      </div>
+      <div id="bottom-nav" class="bottom-nav hidden">
+        <ul>
+          <li>One</li>
+          <li class="two">Two</li>
+          <li class="three">Three</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="overlay">
+
+    </div>
+
+    <script src="./js/zepto.js"></script>
+    <script>
+      window.jQuery = $;
+    </script>
+    <script src="./js/jquery.base64.js"></script>
+    <script src="./js/jquery.jsonp.js"></script>
+    <script>
+    console.log('do it...');
+    $(function(){
+
+        var util = {
+          StorageGetter:function(key){
+            return localStorage.getItem(key);
+          },
+          StorageSetter:function(key,val){
+            localStorage.setItem(key,val);
+          }
+        };
+
+        function ReaderModel(){
+
+        }
+
+        function ReaderBaseFrame(){
+
+        }
+        var Win = $(window);
+        var Doc = $(document);
+
+        var $container = $('#fiction_container');
+        function EventHandler(){
+          /*
+            touch
+            tag
+            click 300ms delay
+          */
+          $('.overlay').click(function(){
+            $('.top-nav').toggleClass('hidden');
+            $('.bottom-nav').toggleClass('hidden');
+            $('.tool-panel').addClass('hidden');
+          });
+
+          Win.scroll(function(){
+            $('.top-nav').addClass('hidden');
+            $('.bottom-nav').addClass('hidden');
+            $('.tool-panel').addClass('hidden');
+          });
+
+          $('.two').click(function(){
+            $('.tool-panel').toggleClass('hidden');
+          });
+
+          var initFontSize = 14;
+
+          $('.font-size-button').click(function(){
+            var text = $(this).text();
+            var ratio = 1.2;
+            var fontSize = parseInt($container.css('font-size'));
+            if(text=="大"){
+              fontSize *= ratio;
+            }else{
+              fontSize /= ratio;
+            }
+            $container.css('font-size',fontSize+"px");
+            util.StorageSetter('fontSize',fontSize);
+          });
+
+          $('.bg-container').click(function(){
+            var bg = $(this).css('background-color');
+            $container.css('background-color',bg);
+            util.StorageSetter('bg',bg);
+          });
+        }
+
+        var fontSize = util.StorageGetter('fontSize');
+        var bg = util.StorageGetter('bg');
+        if(fontSize){
+          $container.css('font-size',fontSize+"px");
+        }
+        if(bg){
+          $container.css('background-color',bg);
+        }
+
+        function main(){
+          EventHandler();
+        }
+
+        main();
+        $('.three').click(function(){
+          $('.tool-panel').toggleClass('hidden');
+
+        })
+    });
+    </script>
+  </body>
+</html>
